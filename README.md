@@ -12,7 +12,7 @@ An intelligent SEO analysis tool that uses AI to provide insights on local compe
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/NFTcolumn/ai-seo-agent.git
 cd ai-seo-agent
 ```
 
@@ -21,10 +21,20 @@ cd ai-seo-agent
 npm install
 ```
 
-3. Create a `.env` file in the root directory and add your OpenAI API key:
-```
-OPENAI_API_KEY=your-api-key-here
-```
+3. Set up your environment:
+   - Create a `.env` file in the root directory
+   - Get your OpenAI API key from [OpenAI's platform](https://platform.openai.com/api-keys)
+   - Add your API key to the `.env` file:
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+   
+   Note: The `.env` file is included in `.gitignore` to ensure your API key remains private. Never commit API keys or sensitive information to version control.
+
+   If you're deploying this tool:
+   - Keep your API key secure
+   - Consider using environment variables in your deployment platform
+   - Rotate your API keys periodically for security
 
 ## Usage
 
